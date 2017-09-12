@@ -19,5 +19,13 @@ public class BankAccountMain {
 			System.out.println("Account 1 is does not belong to a student.");
 		}
 		
+		//paying a fix amount
+		customerAccount1.payIn(500.00);
+		System.out.println("Customer account 1 Blance is now :"+customerAccount1.balance);
+		
+		double aCheque = 45.50;
+		customerAccount2.payIn(aCheque);//paying in via another variable
+		System.out.println("Custoerm balance is now customer 2 :"+customerAccount2.balance);
+		
 	}
 }

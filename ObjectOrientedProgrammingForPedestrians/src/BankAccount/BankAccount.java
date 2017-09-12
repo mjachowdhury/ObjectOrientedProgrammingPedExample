@@ -39,5 +39,13 @@ public class BankAccount {
 		answar = balance + overDraftLimit;
 		return answar;
 	}
+
+	@Override
+	public String toString() {
+		return "BankAccount [cuntomerName=" + cuntomerName + ", address=" + address + ", telephone=" + telephone
+				+ ", student=" + student + ", balance=" + balance + ", overDraftLimit=" + overDraftLimit + "]";
+	}
+	
+	
 	
 }

@@ -40,5 +40,13 @@ public class BankAccountMain {
 		System.out.println("Increasing over draft limit by 200 euros.");
 		customerAccount1.overDraftLimit = 400.00;
 		System.out.println("Cash available now :"+ customerAccount1.cashAvailable());
+		
+		System.out.println();
+		System.out.println("Customer account 1 details.");
+		System.out.println(customerAccount1.toString());
+		
+		System.out.println();
+		System.out.println("Customer account 2 details.");
+		System.out.println(customerAccount2.toString());
 	}
 }

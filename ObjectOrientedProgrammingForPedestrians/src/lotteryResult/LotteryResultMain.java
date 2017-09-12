@@ -14,16 +14,16 @@ public class LotteryResultMain {
 		Scanner keyboard = new Scanner(System.in);
 		int number;
 		System.out.println("Please type the number one by one ,"
-				+"pressing the return key each time.");
-		int i;
-		for(i=0;i<5;i++){
-			number = keyboard.nextInt();
+						+"pressing the return key each time.");
+ 
+		for(int i=0;i<5;i++){
+			number = keyboard.nextInt();//taking the number from user input
 			//n = Integer.parseInt(number);
 			System.out.println("Number is "+ number);
-			thisWeekResult.balls[i] = number;
+			thisWeekResult.balls[i] = number;//storing the number to the array into balls
 		}
 		System.out.println("Please type the bonus number,"
-				+"then press the return key.");
+							+"then press the return key.");
 		number = keyboard.nextInt();
 		//n = Integer.parseInt(number);
 		System.out.println("Bonus number is "+number);

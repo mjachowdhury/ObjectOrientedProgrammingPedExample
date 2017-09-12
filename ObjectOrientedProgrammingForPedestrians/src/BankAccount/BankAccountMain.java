@@ -9,6 +9,8 @@ public class BankAccountMain {
 		customerAccount1.balance = 456.00;
 		customerAccount2.balance = 789.00;
 		
+		customerAccount1.overDraftLimit = 200.00;
+		
 		customerAccount1.setAStudent();
 		customerAccount2.setNotAStudent();
 		
@@ -27,5 +29,16 @@ public class BankAccountMain {
 		customerAccount2.payIn(aCheque);//paying in via another variable
 		System.out.println("Custoerm balance is now customer 2 :"+customerAccount2.balance);
 		
+		
+		double bal;
+		bal = customerAccount1.returnBalance();
+		System.out.println("New Balance for customer1 is now:"+bal);
+		System.out.println("Cash availabe :"+customerAccount1.cashAvailable());
+		
+		//increasing overDraft limit
+		System.out.println();
+		System.out.println("Increasing over draft limit by 200 euros.");
+		customerAccount1.overDraftLimit = 400.00;
+		System.out.println("Cash available now :"+ customerAccount1.cashAvailable());
 	}
 }

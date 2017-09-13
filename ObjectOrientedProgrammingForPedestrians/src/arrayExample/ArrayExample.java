@@ -30,6 +30,16 @@ public class ArrayExample {
 			System.out.println("Runninf total is :"+runningTotal);
 		}
 		
+		/*
+		char[] alphaArray = new char[50];
+		int j;
+		for(j=0;j<49;j++){
+			alphaArray[j]='a';
+			System.out.println(alphaArray[j]);
+		}*/
+		
+		
+		
 		
 	}
 

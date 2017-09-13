@@ -11,8 +11,8 @@ public class BankAccountMain {
 		
 		customerAccount1.overDraftLimit = 200.00;
 		
-		customerAccount1.setAStudent();
-		customerAccount2.setNotAStudent();
+		//customerAccount1.setAStudent();
+		//customerAccount2.setNotAStudent();
 		
 		if(customerAccount1.student == true){
 			System.out.println("Account 1 is belong to a Student");

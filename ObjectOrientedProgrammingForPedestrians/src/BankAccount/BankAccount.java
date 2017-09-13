@@ -2,7 +2,7 @@ package BankAccount;
 
 public class BankAccount {
 
-	String cuntomerName = "Blank";
+	String customerName = "Blank";
 	String address = "Blank";
 	int telephone = 0;
 	boolean student = false;
@@ -10,13 +10,13 @@ public class BankAccount {
 	double overDraftLimit = 0.0;
 	
 	//setting account student or not for student
-	public void setAStudent(){
+	/*public void setAStudent(){
 		student = true;
 	}
 	
 	public void setNotAStudent(){
 		student = false;
-	}
+	}*/
 	
 	/*
 	 * this method for customer payIn
@@ -42,8 +42,20 @@ public class BankAccount {
 
 	@Override
 	public String toString() {
-		return "BankAccount [cuntomerName=" + cuntomerName + ", address=" + address + ", telephone=" + telephone
-				+ ", student=" + student + ", balance=" + balance + ", overDraftLimit=" + overDraftLimit + "]";
+		
+		String studentStatus;
+		if(student==true){
+			studentStatus = "Account holder is a student.";
+		}
+		else{
+			studentStatus = "Account holder is not a student.";
+		}
+		return "Bank account Summary.\n"+
+				"Name : "+customerName+"\n"+
+				"Address : "+address+"\n"+
+				"Telephone : "+telephone+"\n"+
+				"Account Balance : "+balance+"\n"+
+				studentStatus;
 	}
 	
 	
